@@ -35,7 +35,7 @@ public class RestResponse {
     public static Response okWithBody(String body, Integer total_count) {
         Response.ResponseBuilder resp = Response.status(200).entity(body)
                 .header("Access-Control-Allow-Origin", "*")
-                .header("Access-Control-Allow-Credentials ", "true")
+                .header("Access-Control-Allow-Credentials", "true")
                 .header("Access-Control-Allow-Methods", "GET, POST")
                 .allow("OPTIONS");
 
